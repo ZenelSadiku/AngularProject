@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>{{ data.product ? 'Edit Product' : 'Add Product' }} form</h2>
+<mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Product name*</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Product category*</mat-label>
+      <input matInput formControlName="category">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Price*</mat-label>
+      <input matInput formControlName="price" type="number">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Date*</mat-label>
+      <input matInput formControlName="date" placeholder="dd.mm.yyyy">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+</mat-dialog-actions>

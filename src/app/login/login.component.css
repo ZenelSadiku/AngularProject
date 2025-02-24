@@ -1,0 +1,39 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1; /* Each side takes up 50% of the width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-panel {
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.profile-pic {
+  width: 50%;
+  max-width: 300px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.right-panel {
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
